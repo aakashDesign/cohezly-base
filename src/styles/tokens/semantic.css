@@ -1,0 +1,62 @@
+/* Tier 2 — Semantic
+ *
+ * Role tokens. Map UI roles to tier 1 primitives.
+ * This is the ONLY layer that switches per theme.
+ * Names mirror the Figma `color/<group>/<role>/<state>` pattern.
+ *
+ * Rule: every value here is a var(--<primitive>). No hex literals.
+ */
+
+:root {
+  /* background */
+  --color-background-page: var(--gray-50);
+  --color-background-neutral: var(--gray-0);
+  --color-background-strong: var(--gray-50);
+
+  /* content (text / icon) */
+  --color-content-neutral: var(--gray-950);
+  --color-content-subtle: var(--gray-900);
+  --color-content-knockout: var(--gray-0);
+
+  --color-content-utility-positive: var(--green-900);
+  --color-content-utility-critical: var(--red-900);
+  --color-content-utility-warning: var(--brown-900);
+
+  /* border */
+  --color-border-subtle: var(--gray-100);
+
+  /* accent — the "do-the-action" colour */
+  --color-accent-default: var(--gray-700);
+  --color-accent-hover: var(--gray-900);
+
+  /* status */
+  --color-status-danger: var(--red-500);
+
+  /* focus */
+  --color-focus-ring: var(--brand-500);
+}
+
+[data-theme='dark'] {
+  /* background */
+  --color-background-page: var(--gray-950);
+  --color-background-neutral: var(--gray-900);
+  --color-background-strong: var(--gray-700);
+
+  /* content */
+  --color-content-neutral: var(--gray-0);
+  --color-content-subtle: var(--gray-200);
+  --color-content-knockout: var(--gray-900);
+
+  /* border */
+  --color-border-subtle: var(--gray-700);
+
+  /* accent */
+  --color-accent-default: var(--gray-0);
+  --color-accent-hover: var(--gray-200);
+
+  /* status */
+  --color-status-danger: var(--red-400);
+
+  /* focus */
+  --color-focus-ring: var(--brand-400);
+}

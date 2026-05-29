@@ -1,0 +1,51 @@
+/* Tier 3 — Component tokens
+ *
+ * Scoped aliases per component. Resolve to tier 2 (semantic) tokens.
+ * Component CSS references THESE.
+ *
+ * Dark mode is inherited via tier 2 — do not add a [data-theme='dark']
+ * block here unless a component truly needs a different mapping in dark.
+ */
+
+:root {
+  /* Button */
+  --button-bg-primary: var(--teal-alpha-700);
+  --button-bg-primary-hover: var(--teal-alpha-800);
+  --button-fg-primary: var(--color-content-knockout);
+  --button-border-primary: var(--teal-700);
+
+  --button-bg-secondary: var(--gray-alpha-50);
+  --button-bg-secondary-hover: var(--gray-alpha-100);
+  --button-fg-secondary: var(--color-content-neutral);
+  --button-border-secondary: var(--gray-alpha-200);
+
+  --button-bg-ghost-hover: var(--gray-alpha-100);
+  --button-fg-ghost: var(--color-content-neutral-default);
+  --button-border-ghost: transparent;
+
+  --button-bg-positive: var(--green-alpha-100);
+  --button-bg-positive-hover: var(--green-alpha-200);
+  --button-fg-positive: var(--color-content-utility-positive);
+  --button-border-positive: var(--green-700);
+
+  --button-bg-critical: var(--red-alpha-100);
+  --button-bg-critical-hover: var(--red-alpha-200);
+  --button-fg-critical: var(--color-content-utility-critical);
+  --button-border-critical: var(--red-700);
+
+  --button-bg-warning: var(--brown-alpha-100);
+  --button-bg-warning-hover: var(--brown-alpha-200);
+  --button-fg-warning: var(--color-content-utility-warning);
+  --button-border-warning: var(--brown-700);
+
+  /* Input */
+  --input-bg: var(--color-background-neutral-default);
+  --input-fg: var(--color-content-neutral-default);
+  --input-border: var(--color-border-subtle);
+  --input-border-focus: var(--color-focus-ring);
+  --input-border-invalid: var(--color-status-danger);
+  --input-placeholder: var(--color-content-subtle-default);
+  --input-label-fg: var(--color-content-neutral-default);
+  --input-description-fg: var(--color-content-subtle-default);
+  --input-error-fg: var(--color-status-danger);
+}

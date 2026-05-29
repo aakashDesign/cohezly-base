@@ -1,0 +1,141 @@
+.ui-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  line-height: var(--line-tight);
+  border: .5px solid transparent;
+  cursor: pointer;
+  transition:
+    background-color 120ms ease,
+    color 120ms ease,
+    border-color 120ms ease;
+}
+
+.ui-button:focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 2px;
+}
+
+.ui-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ui-button[data-size='sm'] {
+  height: 2rem;
+  padding-block: var(--space-0-5);
+  padding-inline: var(--space-2);
+  font-size: var(--text-sm);
+}
+
+.ui-button[data-size='md'] {
+  height: 2.5rem;
+  padding-block: var(--space-1);
+  padding-inline: var(--space-3);
+  font-size: var(--text-sm);
+}
+
+.ui-button[data-size='lg'] {
+  height: 3rem;
+  padding-block: var(--space-1-5);
+  padding-inline: var(--space-4);
+  font-size: var(--text-base);
+}
+
+.ui-button[data-variant='primary'] {
+  background: var(--button-bg-primary);
+  color: var(--button-fg-primary);
+  border-color: var(--button-border-primary);
+  box-shadow:
+  /* top inner highlight */
+  0 1px 1px 0 rgba(255, 255, 255, 0.50) inset,
+  /* bottom inner shadow */
+  0 0 0 0 rgba(0, 0, 0, 0.20) inset,
+  /* drop shadow */
+  0 2px 0 0 rgba(0, 0, 0, 0.05);
+}
+
+.ui-button[data-variant='primary']:hover:not(:disabled) {
+  background: var(--button-bg-primary-hover);
+}
+
+.ui-button[data-variant='secondary'] {
+  background: var(--button-bg-secondary);
+  color: var(--button-fg-secondary);
+  border-color: var(--button-border-secondary);
+  box-shadow:
+  /* top inner highlight */
+  0 1px 0 1px #FFF inset,
+  /* bottom inner shadow */
+  0 0 0 0 rgba(0, 0, 0, 0.10) inset,
+  /* drop shadow */
+  0 2px 0 0 rgba(0, 0, 0, 0.05);
+}
+
+.ui-button[data-variant='secondary']:hover:not(:disabled) {
+  background: var(--button-bg-secondary-hover);
+}
+
+.ui-button[data-variant='ghost'] {
+  background: transparent;
+  color: var(--button-fg-ghost);
+  border-color: var(--button-border-ghost);
+}
+
+.ui-button[data-variant='ghost']:hover:not(:disabled) {
+  background: var(--button-bg-ghost-hover);
+}
+
+.ui-button[data-variant='positive'] {
+  background: var(--button-bg-positive);
+  color: var(--button-fg-positive);
+  border-color: var(--button-border-positive);
+  box-shadow:
+  /* top inner highlight */
+  0 1px 1px 0 rgba(255, 255, 255, 0.50) inset,
+  /* bottom inner shadow */
+  0 0 0 0 rgba(0, 0, 0, 0.20) inset,
+  /* drop shadow */
+  0 2px 0 0 rgba(0, 0, 0, 0.05);
+}
+
+.ui-button[data-variant='positive']:hover:not(:disabled) {
+  background: var(--button-bg-positive-hover);
+}
+
+.ui-button[data-variant='critical'] {
+  background: var(--button-bg-critical);
+  color: var(--button-fg-crtical);
+  border-color: var(--button-border-critical);
+  box-shadow:
+  /* top inner highlight */
+  0 1px 1px 0 rgba(255, 255, 255, 0.50) inset,
+  /* bottom inner shadow */
+  0 0 0 0 rgba(0, 0, 0, 0.20) inset,
+  /* drop shadow */
+  0 2px 0 0 rgba(0, 0, 0, 0.05);
+}
+
+.ui-button[data-variant='critical']:hover:not(:disabled) {
+  background: var(--button-bg-critical-hover);
+}
+
+.ui-button[data-variant='warning'] {
+  background: var(--button-bg-warning);
+  color: var(--button-fg-warning);
+  border-color: var(--button-border-warning);
+  box-shadow:
+  /* top inner highlight */
+  0 1px 1px 0 rgba(255, 255, 255, 0.50) inset,
+  /* bottom inner shadow */
+  0 0 0 0 rgba(0, 0, 0, 0.20) inset,
+  /* drop shadow */
+  0 2px 0 0 rgba(0, 0, 0, 0.05);
+}
+
+.ui-button[data-variant='warning']:hover:not(:disabled) {
+  background: var(--button-bg-warning-hover);
+}
