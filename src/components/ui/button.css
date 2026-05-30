@@ -55,7 +55,7 @@
   /* bottom inner shadow */
   0 0 0 0 rgba(0, 0, 0, 0.20) inset,
   /* drop shadow */
-  0 2px 0 0 rgba(0, 0, 0, 0.05);
+  0 2px 0 0 var(--shadow-button-dropShadow);
 }
 
 .ui-button[data-variant='primary']:hover:not(:disabled) {
@@ -68,11 +68,11 @@
   border-color: var(--button-border-secondary);
   box-shadow:
   /* top inner highlight */
-  0 1px 0 1px #FFF inset,
+  0 1px 0 1px var(--shadow-button-secondary-resting-topInnerShadow) inset,
   /* bottom inner shadow */
   0 0 0 0 rgba(0, 0, 0, 0.10) inset,
   /* drop shadow */
-  0 2px 0 0 rgba(0, 0, 0, 0.05);
+  0 2px 0 0 var(--shadow-button-dropShadow);
 }
 
 .ui-button[data-variant='secondary']:hover:not(:disabled) {
@@ -99,7 +99,7 @@
   /* bottom inner shadow */
   0 0 0 0 rgba(0, 0, 0, 0.20) inset,
   /* drop shadow */
-  0 2px 0 0 rgba(0, 0, 0, 0.05);
+  0 2px 0 0 var(--shadow-button-dropShadow);
 }
 
 .ui-button[data-variant='positive']:hover:not(:disabled) {
@@ -108,7 +108,7 @@
 
 .ui-button[data-variant='critical'] {
   background: var(--button-bg-critical);
-  color: var(--button-fg-crtical);
+  color: var(--button-fg-critical);
   border-color: var(--button-border-critical);
   box-shadow:
   /* top inner highlight */
@@ -116,7 +116,7 @@
   /* bottom inner shadow */
   0 0 0 0 rgba(0, 0, 0, 0.20) inset,
   /* drop shadow */
-  0 2px 0 0 rgba(0, 0, 0, 0.05);
+  0 2px 0 0 var(--shadow-button-dropShadow);
 }
 
 .ui-button[data-variant='critical']:hover:not(:disabled) {
@@ -133,7 +133,7 @@
   /* bottom inner shadow */
   0 0 0 0 rgba(0, 0, 0, 0.20) inset,
   /* drop shadow */
-  0 2px 0 0 rgba(0, 0, 0, 0.05);
+  0 2px 0 0 var(--shadow-button-dropShadow);
 }
 
 .ui-button[data-variant='warning']:hover:not(:disabled) {

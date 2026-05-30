@@ -38,6 +38,9 @@
   --button-fg-warning: var(--color-content-utility-warning);
   --button-border-warning: var(--brown-700);
 
+  /* Button shadows*/
+  --shadow-button-secondary-resting-topInnerShadow: #ffffff80;
+  --shadow-button-dropShadow: #0000000D;
   /* Input */
   --input-bg: var(--color-background-neutral-default);
   --input-fg: var(--color-content-neutral-default);
@@ -48,4 +51,51 @@
   --input-label-fg: var(--color-content-neutral-default);
   --input-description-fg: var(--color-content-subtle-default);
   --input-error-fg: var(--color-status-danger);
+}
+
+
+[data-theme='dark'] {
+   /* Button */
+   --button-bg-primary: var(--dark-teal-alpha-200);
+   --button-bg-primary-hover: var(--dark-teal-alpha-100);
+   --button-fg-primary: var(--color-content-knockout);
+   --button-border-primary: var(--dark-teal-100);
+ 
+   --button-bg-secondary: var(--dark-gray-alpha-100);
+   --button-bg-secondary-hover: var(--dark-gray-alpha-200);
+   --button-fg-secondary: var(--color-content-neutral);
+   --button-border-secondary: var(--dark-gray-alpha-300);
+ 
+   --button-bg-ghost-hover: var(--dark-gray-alpha-200);
+   --button-fg-ghost: var(--color-content-neutral);
+   --button-border-ghost: transparent;
+ 
+   --button-bg-positive: var(--green-alpha-100);
+   --button-bg-positive-hover: var(--green-alpha-200);
+   --button-fg-positive: var(--color-content-utility-positive);
+   --button-border-positive: var(--green-700);
+ 
+   --button-bg-critical: var(--red-alpha-100);
+   --button-bg-critical-hover: var(--red-alpha-200);
+   --button-fg-critical: var(--color-content-utility-critical);
+   --button-border-critical: var(--red-700);
+ 
+   --button-bg-warning: var(--brown-alpha-100);
+   --button-bg-warning-hover: var(--brown-alpha-200);
+   --button-fg-warning: var(--color-content-utility-warning);
+   --button-border-warning: var(--brown-700);
+ 
+   /* Button shadows*/
+   --shadow-button-secondary-resting-topInnerShadow: #ffffff33;
+   --shadow-button-dropShadow: #0000001A;
+   /* Input */
+   --input-bg: var(--color-background-neutral-default);
+   --input-fg: var(--color-content-neutral-default);
+   --input-border: var(--color-border-subtle);
+   --input-border-focus: var(--color-focus-ring);
+   --input-border-invalid: var(--color-status-danger);
+   --input-placeholder: var(--color-content-subtle-default);
+   --input-label-fg: var(--color-content-neutral-default);
+   --input-description-fg: var(--color-content-subtle-default);
+   --input-error-fg: var(--color-status-danger);
 }
