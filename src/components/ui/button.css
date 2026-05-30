@@ -2,7 +2,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: var(--space-2);
+  gap: var(--space-1);
   border-radius: var(--radius-md);
   font-weight: 500;
   line-height: var(--line-tight);
@@ -24,25 +24,65 @@
   cursor: not-allowed;
 }
 
+.ui-button__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ui-button__label {
+  text-shadow: var(--shadow-button-label-secondary);
+  padding-block: var(--space-0-5);
+  padding-inline: var(--space-0-5);
+}
+
+.ui-button[data-variant='primary']:not(:disabled) .ui-button__label {
+  text-shadow: var(--shadow-button-label-secondary);
+}
+
+.ui-button[data-variant='ghost'] .ui-button__label,
+.ui-button:disabled .ui-button__label {
+  text-shadow: none;
+}
+
+.ui-button[data-size='sm'] .ui-button__icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+.ui-button[data-size='md'] .ui-button__icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.ui-button[data-size='lg'] .ui-button__icon svg {
+  width: 18px;
+  height: 18px;
+}
+
 .ui-button[data-size='sm'] {
   height: 2rem;
   padding-block: var(--space-0-5);
   padding-inline: var(--space-2);
-  font-size: var(--text-sm);
+  font-size: var(--type-label-sm-size);
+  line-height: var(--type-label-sm-lineHeight);
 }
 
 .ui-button[data-size='md'] {
   height: 2.5rem;
   padding-block: var(--space-1);
   padding-inline: var(--space-3);
-  font-size: var(--text-sm);
+  font-size: var(--type-label-md-size);
+  line-height: var(--type-label-md-lineHeight);
 }
 
 .ui-button[data-size='lg'] {
   height: 3rem;
   padding-block: var(--space-1-5);
   padding-inline: var(--space-4);
-  font-size: var(--text-base);
+  font-size: var(--type-label-lg-size);
+  line-height: var(--type-label-lg-lineHeight);
 }
 
 .ui-button[data-variant='primary'] {
