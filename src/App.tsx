@@ -74,6 +74,18 @@ export function App() {
       </section>
 
       <section className="demo__section">
+        <h2>Button — disabled</h2>
+        <div className="demo__row">
+          <Button variant="primary" disabled>Primary</Button>
+          <Button variant="secondary" disabled>Secondary</Button>
+          <Button variant="ghost" disabled>Ghost</Button>
+          <Button variant="positive" disabled>Positive</Button>
+          <Button variant="critical" disabled>Critical</Button>
+          <Button variant="warning" disabled>Warning</Button>
+        </div>
+      </section>
+
+      <section className="demo__section">
         <h2>Input</h2>
         <form className="demo__form" onSubmit={handleSubmit} noValidate>
           <Input
