@@ -1,0 +1,26 @@
+:root {
+    /* Label — UI controls (button, field label, chip) */
+    --type-label-sm-size: var(--text-xxs);
+    --type-label-sm-weight: var(--font-weight-medium);
+    --type-label-sm-lineHeight: var(--lineHeight-md);
+    /* ... */
+    --type-label-md-size: var(--text-sm);
+    --type-label-md-weight: var(--font-weight-medium);
+    --type-label-md-lineHeight: var(--lineHeight-md);
+    /* ... */
+    --type-label-lg-size: var(--text-base);
+    --type-label-lg-weight: var(--font-weight-medium);
+    --type-label-lg-lineHeight: var(--lineHeight-md);
+
+
+    /* Body — paragraphs, descriptions */
+    --type-body-md-size: var(--text-base);
+    --type-body-md-weight: var(--font-weight-regular);
+    --type-body-md-lineHeight: var(--lineHeight-lg);
+
+
+    /* Heading — page/section titles */
+    --type-heading-lg-size: var(--text-lg);
+    --type-heading-lg-weight: var(--font-weight-semibold);
+    --type-heading-lg-lineHeight: var(--lineHeight-lg);
+  }

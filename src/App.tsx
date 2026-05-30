@@ -1,4 +1,5 @@
 import { useState, type FormEvent } from 'react';
+import { ArrowDown, ArrowRight, Check, ChevronDown, ChevronsDownUp, ChevronsUpDown, Plus } from 'lucide-react';
 import { Button } from './components/ui/button';
 import { Input } from './components/ui/input';
 import './app.css';
@@ -42,34 +43,34 @@ export function App() {
       <section className="demo__section">
         <h2>Button</h2>
         <div className="demo__row">
-          <Button size="lg" variant="primary">Action</Button>
-          <Button size="md" variant="primary">Action</Button>
-          <Button size="sm" variant="primary">Action</Button>
+          <Button size="lg" variant="primary" startIcon={<Plus />} endIcon={<ChevronsUpDown />}>Action</Button>
+          <Button size="md" variant="primary" startIcon={<Plus />} endIcon={<ChevronsUpDown />}>Action</Button>
+          <Button size="sm" variant="primary" startIcon={<Plus />} endIcon={<ChevronsUpDown />}>Action</Button>
         </div>
         <div className="demo__row">
-          <Button size="lg" variant="positive">Action</Button>
-          <Button size="md" variant="positive">Action</Button>
-          <Button size="sm" variant="positive">Action</Button>
+          <Button size="lg" variant="positive" startIcon={<Plus />} endIcon={<ChevronsUpDown />}>Action</Button>
+          <Button size="md" variant="positive" startIcon={<Plus />} endIcon={<ChevronsUpDown />}>Action</Button>
+          <Button size="sm" variant="positive" startIcon={<Plus />} endIcon={<ChevronsUpDown />}>Action</Button>
         </div>
         <div className="demo__row">
-          <Button size="lg" variant="critical">Action</Button>
-          <Button size="md" variant="critical">Action</Button>
-          <Button size="sm" variant="critical">Action</Button>
+          <Button size="lg" variant="critical" startIcon={<Plus />} endIcon={<ChevronsUpDown />}>Action</Button>
+          <Button size="md" variant="critical" startIcon={<Plus />} endIcon={<ChevronsUpDown />}>Action</Button>
+          <Button size="sm" variant="critical" startIcon={<Plus />} endIcon={<ChevronsUpDown />}>Action</Button>
         </div>
         <div className="demo__row">
-          <Button size="lg" variant="warning">Action</Button>
-          <Button size="md" variant="warning">Action</Button>
-          <Button size="sm" variant="warning">Action</Button>
+          <Button size="lg" variant="warning" startIcon={<Plus />} endIcon={<ChevronsUpDown />}>Action</Button>
+          <Button size="md" variant="warning" startIcon={<Plus />} endIcon={<ChevronsUpDown />}>Action</Button>
+          <Button size="sm" variant="warning" startIcon={<Plus />} endIcon={<ChevronsUpDown />}>Action</Button>
         </div>
         <div className="demo__row">
-          <Button size="lg" variant="secondary">Action</Button>
-          <Button size="md" variant="secondary">Action</Button>
-          <Button size="sm" variant="secondary">Action</Button>
+          <Button size="lg" variant="secondary" startIcon={<Plus />} endIcon={<ChevronsUpDown />}>Action</Button>
+          <Button size="md" variant="secondary" startIcon={<Plus />} endIcon={<ChevronsUpDown />}>Action</Button>
+          <Button size="sm" variant="secondary" startIcon={<Plus />} endIcon={<ChevronsUpDown />}>Action</Button>
         </div>
         <div className="demo__row">
-          <Button size="lg" variant="ghost">Action</Button>
-          <Button size="md" variant="ghost">Action</Button>
-          <Button size="sm" variant="ghost">Action</Button>
+          <Button size="lg" variant="ghost" startIcon={<Plus />} endIcon={<ChevronsUpDown />}>Action</Button>
+          <Button size="md" variant="ghost" startIcon={<Plus />} endIcon={<ChevronsUpDown />}>Action</Button>
+          <Button size="sm" variant="ghost" startIcon={<Plus />} endIcon={<ChevronsUpDown />}>Action</Button>
         </div>
       </section>
 

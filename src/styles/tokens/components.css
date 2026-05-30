@@ -63,6 +63,8 @@
   /* Button shadows*/
   --shadow-button-secondary-resting-topInnerShadow: #ffffff80;
   --shadow-button-dropShadow: #0000000D;
+  --shadow-button-label: 0 1px 2px #00000040;
+  --shadow-button-label-secondary: 0 1px 1px #00000040;
   /* Input */
   --input-bg: var(--color-background-neutral-default);
   --input-fg: var(--color-content-neutral-default);
@@ -131,6 +133,8 @@
    /* Button shadows*/
    --shadow-button-secondary-resting-topInnerShadow: #ffffff33;
    --shadow-button-dropShadow: #0000001A;
+   --shadow-button-label: 0 1px 2px #00000040;
+   --shadow-button-label-secondary: 0 1px 1px #00000080;
    /* Input */
    --input-bg: var(--color-background-neutral-default);
    --input-fg: var(--color-content-neutral-default);
