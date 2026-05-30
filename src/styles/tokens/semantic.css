@@ -15,6 +15,7 @@
 
   /* content (text / icon) */
   --color-content-neutral: var(--gray-950);
+  --color-content-neutral-disabled: var(--gray-700);
   --color-content-subtle: var(--gray-900);
   --color-content-knockout: var(--gray-0);
 
@@ -44,6 +45,7 @@
 
   /* content */
   --color-content-neutral: var(--dark-gray-950);
+  --color-content-neutral-disabled: var(--dark-gray-800);
   --color-content-subtle: var(--dark-gray-900);
   --color-content-knockout: var(--gray-0);
 
