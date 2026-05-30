@@ -17,13 +17,14 @@
   margin: 0;
   font-size: var(--text-lg);
   font-weight: 600;
+  color: var(--color-content-neutral);
 }
 
 .demo h2 {
   margin: 0 0 var(--space-4);
   font-size: var(--text-base);
   font-weight: 600;
-  color: var(--color-content-subtle-default);
+  color: var(--color-content-subtle);
 }
 
 .demo__section {
