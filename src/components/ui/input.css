@@ -5,9 +5,23 @@
 }
 
 .ui-field__label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
   font-size: var(--text-sm);
   font-weight: 500;
   color: var(--input-label-fg);
+}
+
+.ui-field__label-icon {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.ui-field__label-icon svg {
+  width: 14px;
+  height: 14px;
 }
 
 .ui-field__control {
@@ -16,8 +30,9 @@
   font-size: var(--text-sm);
   color: var(--input-fg);
   background: var(--input-bg);
-  border: 1px solid var(--input-border);
+  border: .5px solid var(--input-border);
   border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card-subtle);
   transition:
     border-color 120ms ease,
     box-shadow 120ms ease;
@@ -30,7 +45,7 @@
 .ui-field__control:focus-visible {
   outline: none;
   border-color: var(--input-border-focus);
-  box-shadow: 0 0 0 2px color-mix(in oklab, var(--input-border-focus) 30%, transparent);
+  box-shadow: var(--shadow-card-default)
 }
 
 .ui-field__control:disabled {
