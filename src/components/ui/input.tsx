@@ -5,12 +5,13 @@ import './input.css';
 
 export interface InputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {
   label?: ReactNode;
+  labelIcon?: ReactNode;
   description?: ReactNode;
   error?: ReactNode;
 }
 
 export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
-  { label, description, error, className, id, name, disabled, ...props },
+  { label, labelIcon, description, error, className, id, name, disabled, ...props },
   ref,
 ) {
   const autoId = useId();
@@ -23,7 +24,16 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
       invalid={error != null}
       className="ui-field"
     >
-      {label && <Field.Label className="ui-field__label">{label}</Field.Label>}
+      {label && (
+        <Field.Label className="ui-field__label">
+          {labelIcon && (
+            <span className="ui-field__label-icon" aria-hidden="true">
+              {labelIcon}
+            </span>
+          )}
+          <span className="ui-field__label-text">{label}</span>
+        </Field.Label>
+      )}
       <Field.Control
         id={fieldId}
         ref={ref}

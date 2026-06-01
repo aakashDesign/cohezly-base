@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react';
-import { ArrowDown, ArrowRight, Check, ChevronDown, ChevronsDownUp, ChevronsUpDown, Plus } from 'lucide-react';
+import { ChevronsUpDown, Key, Mail, Plus, User } from 'lucide-react';
 import { Button } from './components/ui/button';
 import { Input } from './components/ui/input';
 import './app.css';
@@ -91,18 +91,21 @@ export function App() {
         <form className="demo__form" onSubmit={handleSubmit} noValidate>
           <Input
             label="Full name"
+            labelIcon={<User />}
             name="full_name"
             type="text"
             placeholder="John Smith"
           />
           <Input
             label="Work email"
+            labelIcon={<Mail />}
             name="email"
             type="email"
             placeholder="john@example.com"
           />
           <Input
             label="Password"
+            labelIcon={<Key />}
             name="password"
             type="password"
           />

@@ -24,17 +24,18 @@
   --color-content-utility-warning: var(--brown-900);
 
   /* border */
-  --color-border-subtle: var(--gray-100);
-
-  /* accent — the "do-the-action" colour */
-  --color-accent-default: var(--gray-700);
-  --color-accent-hover: var(--gray-900);
+  --color-border-subtle: var(--gray-200);
+  --color-border-brand: var(--teal-700)
 
   /* status */
   --color-status-danger: var(--red-500);
 
   /* focus */
-  --color-focus-ring: var(--brand-500);
+  --color-focus-ring: var(--teal-700);
+
+ /* shadows */
+  --shadow-card-subtle: 0 1px 2px var(--gray-alpha-100);
+  --shadow-card-default: 0 2px 4px var(--gray-alpha-100);
 }
 
 [data-theme='dark'] {
@@ -63,6 +64,7 @@
   /* status */
   --color-status-danger: var(--dark-red-400);
 
-  /* focus */
-  --color-focus-ring: var(--dark-brand-400);
+  /* shadows */
+  --shadow-card-subtle: 0 1px 2px var(--dark-gray-alpha-100);
+  --shadow-card-default: 0 2px 4px var(--dark-gray-alpha-100);
 }
