@@ -90,14 +90,21 @@ export function App() {
         <h2>Input</h2>
         <form className="demo__form" onSubmit={handleSubmit} noValidate>
           <Input
-            label="Email"
+            label="Full name"
+            name="full_name"
+            type="text"
+            placeholder="John Smith"
+          />
+          <Input
+            label="Work email"
             name="email"
             type="email"
-            placeholder="you@example.com"
-            description="We'll never share your email."
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            error={emailError}
+            placeholder="john@example.com"
+          />
+          <Input
+            label="Password"
+            name="password"
+            type="password"
           />
           <Button type="submit">Submit</Button>
         </form>
