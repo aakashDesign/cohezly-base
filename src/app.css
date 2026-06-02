@@ -50,3 +50,10 @@
 .demo__form > .ui-field {
   width: 100%;
 }
+
+.demo__stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: flex-start;
+}

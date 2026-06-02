@@ -2,6 +2,7 @@ import { useState, type FormEvent } from 'react';
 import { ChevronsUpDown, Key, Mail, Plus, User } from 'lucide-react';
 import { Button } from './components/ui/button';
 import { Input } from './components/ui/input';
+import { Checkbox } from './components/ui/checkbox';
 import './app.css';
 
 type Theme = 'light' | 'dark';
@@ -111,6 +112,17 @@ export function App() {
           />
           <Button type="submit">Submit</Button>
         </form>
+      </section>
+
+      <section className="demo__section">
+        <h2>Checkbox</h2>
+        <div className="demo__stack">
+          <Checkbox label="Subscribe to newsletter" defaultChecked />
+          <Checkbox label="Accept terms and conditions" />
+          <Checkbox label="Indeterminate state" indeterminate />
+          <Checkbox label="Disabled, unchecked" disabled />
+          <Checkbox label="Disabled, checked" disabled defaultChecked />
+        </div>
       </section>
     </main>
   );
