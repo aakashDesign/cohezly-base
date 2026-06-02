@@ -1,0 +1,53 @@
+.ui-table__scroll {
+  width: 100%;
+  overflow-x: auto;
+  background: var(--color-background-neutral);
+  border: 0.5px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+}
+
+.ui-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: var(--font-sans);
+  color: var(--color-content-neutral);
+}
+
+.ui-table__head-cell {
+  font-size: var(--text-xxs);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--lineHeight-md);
+  color: var(--color-content-neutral);
+  text-align: left;
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-background-neutral);
+  border-bottom: 0.5px solid var(--color-border-subtle);
+  vertical-align: middle;
+}
+
+.ui-table__cell {
+  font-size: var(--text-xxs);
+  font-weight: 300;
+  line-height: var(--lineHeight-md);
+  color: var(--color-content-neutral);
+  padding: var(--space-2) var(--space-4);
+  vertical-align: middle;
+}
+
+.ui-table__head-cell .ui-checkbox,
+.ui-table__cell .ui-checkbox {
+  vertical-align: middle;
+}
+
+.ui-table__body .ui-table__row + .ui-table__row .ui-table__cell {
+  border-top: 0.5px solid var(--color-border-subtle);
+}
+
+.ui-table__body .ui-table__row:hover:not([data-selected]) .ui-table__cell {
+  background: var(--gray-alpha-50);
+}
+
+.ui-table__row[data-selected] .ui-table__cell {
+  background: var(--teal-50);
+}

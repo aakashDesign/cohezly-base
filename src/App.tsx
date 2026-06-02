@@ -3,6 +3,14 @@ import { ChevronsUpDown, Key, Mail, Plus, User } from 'lucide-react';
 import { Button } from './components/ui/button';
 import { Input } from './components/ui/input';
 import { Checkbox } from './components/ui/checkbox';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from './components/ui/table';
 import './app.css';
 
 type Theme = 'light' | 'dark';
@@ -11,10 +19,31 @@ function setTheme(theme: Theme) {
   document.documentElement.dataset.theme = theme;
 }
 
+const TABLE_ROW_COUNT = 8;
+
 export function App() {
   const [theme, setThemeState] = useState<Theme>('light');
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState<string | null>(null);
+  const [selectedRows, setSelectedRows] = useState<Set<number>>(() => new Set([3]));
+
+  const toggleRow = (index: number) =>
+    setSelectedRows((prev) => {
+      const next = new Set(prev);
+      if (next.has(index)) next.delete(index);
+      else next.add(index);
+      return next;
+    });
+
+  const toggleAll = () =>
+    setSelectedRows((prev) =>
+      prev.size === TABLE_ROW_COUNT
+        ? new Set()
+        : new Set(Array.from({ length: TABLE_ROW_COUNT }, (_, i) => i)),
+    );
+
+  const allSelected = selectedRows.size === TABLE_ROW_COUNT;
+  const someSelected = selectedRows.size > 0 && !allSelected;
 
   const toggleTheme = () => {
     const next: Theme = theme === 'light' ? 'dark' : 'light';
@@ -123,6 +152,55 @@ export function App() {
           <Checkbox label="Disabled, unchecked" disabled />
           <Checkbox label="Disabled, checked" disabled defaultChecked />
         </div>
+      </section>
+
+      <section className="demo__section">
+        <h2>Table</h2>
+        <Table>
+          <TableHeader>
+            <TableRow>
+              <TableHead>
+                <Checkbox
+                  aria-label="Select all"
+                  checked={allSelected}
+                  indeterminate={someSelected}
+                  onCheckedChange={toggleAll}
+                />
+              </TableHead>
+              <TableHead>Header</TableHead>
+              <TableHead>Header</TableHead>
+              <TableHead>Header</TableHead>
+              <TableHead>Header</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {Array.from({ length: TABLE_ROW_COUNT }, (_, i) => {
+              const selected = selectedRows.has(i);
+              return (
+                <TableRow key={i} selected={selected}>
+                  <TableCell>
+                    <Checkbox
+                      aria-label={`Select row ${i + 1}`}
+                      checked={selected}
+                      onCheckedChange={() => toggleRow(i)}
+                    />
+                  </TableCell>
+                  <TableCell>Text</TableCell>
+                  <TableCell>Text</TableCell>
+                  <TableCell>Text</TableCell>
+                  <TableCell>
+                    <Button
+                      size="sm"
+                      variant="primary"
+                    >
+                      Action
+                    </Button>
+                  </TableCell>
+                </TableRow>
+              );
+            })}
+          </TableBody>
+        </Table>
       </section>
     </main>
   );
