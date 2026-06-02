@@ -10,7 +10,7 @@
   gap: var(--space-1);
   font-size: var(--text-sm);
   font-weight: 500;
-  color: var(--input-label-fg);
+  color: var(--input-label-content);
 }
 
 .ui-field__label-icon {
@@ -28,7 +28,7 @@
   height: 2.5rem;
   padding: 0 var(--space-3);
   font-size: var(--text-sm);
-  color: var(--input-fg);
+  color: var(--input-content);
   background: var(--input-bg);
   border: .5px solid var(--input-border);
   border-radius: var(--radius-md);
@@ -65,10 +65,10 @@
 
 .ui-field__description {
   font-size: var(--text-sm);
-  color: var(--input-description-fg);
+  color: var(--input-description-content);
 }
 
 .ui-field__error {
   font-size: var(--text-sm);
-  color: var(--input-error-fg);
+  color: var(--input-error-content);
 }

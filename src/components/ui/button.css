@@ -87,7 +87,7 @@
 
 .ui-button[data-variant='primary'] {
   background: var(--button-bg-primary);
-  color: var(--button-fg-primary);
+  color: var(--button-content-primary);
   border-color: var(--button-border-primary);
   box-shadow:
   /* top inner highlight */
@@ -111,14 +111,14 @@
 
 .ui-button[data-variant='primary']:disabled {
   background: var(--button-bg-primary-disabled);
-  color: var(--button-fg-primary-disabled);
+  color: var(--button-content-primary-disabled);
   border-color: transparent;
   box-shadow: none;
 }
 
 .ui-button[data-variant='secondary'] {
   background: var(--button-bg-secondary);
-  color: var(--button-fg-secondary);
+  color: var(--button-content-secondary);
   border-color: var(--button-border-secondary);
   box-shadow:
   /* top inner highlight */
@@ -142,14 +142,14 @@
 
 .ui-button[data-variant='secondary']:disabled {
   background: var(--button-bg-secondary-disabled);
-  color: var(--button-fg-secondary-disabled);
+  color: var(--button-content-secondary-disabled);
   border-color: transparent;
   box-shadow: none;
 }
 
 .ui-button[data-variant='ghost'] {
   background: transparent;
-  color: var(--button-fg-ghost);
+  color: var(--button-content-ghost);
   border-color: var(--button-border-ghost);
 }
 
@@ -163,13 +163,13 @@
 
 .ui-button[data-variant='ghost']:disabled {
   background: var(--button-bg-ghost-disabled);
-  color: var(--button-fg-ghost-disabled);
+  color: var(--button-content-ghost-disabled);
   border-color: transparent;
 }
 
 .ui-button[data-variant='positive'] {
   background: var(--button-bg-positive);
-  color: var(--button-fg-positive);
+  color: var(--button-content-positive);
   border-color: var(--button-border-positive);
   box-shadow:
   /* top inner highlight */
@@ -193,14 +193,14 @@
 
 .ui-button[data-variant='positive']:disabled {
   background: var(--button-bg-positive-disabled);
-  color: var(--button-fg-positive-disabled);
+  color: var(--button-content-positive-disabled);
   border-color: transparent;
   box-shadow: none;
 }
 
 .ui-button[data-variant='critical'] {
   background: var(--button-bg-critical);
-  color: var(--button-fg-critical);
+  color: var(--button-content-critical);
   border-color: var(--button-border-critical);
   box-shadow:
   /* top inner highlight */
@@ -224,14 +224,14 @@
 
 .ui-button[data-variant='critical']:disabled {
   background: var(--button-bg-critical-disabled);
-  color: var(--button-fg-critical-disabled);
+  color: var(--button-content-critical-disabled);
   border-color: transparent;
   box-shadow: none;
 }
 
 .ui-button[data-variant='warning'] {
   background: var(--button-bg-warning);
-  color: var(--button-fg-warning);
+  color: var(--button-content-warning);
   border-color: var(--button-border-warning);
   box-shadow:
   /* top inner highlight */
@@ -255,7 +255,7 @@
 
 .ui-button[data-variant='warning']:disabled {
   background: var(--button-bg-warning-disabled);
-  color: var(--button-fg-warning-disabled);
+  color: var(--button-content-warning-disabled);
   border-color: transparent;
   box-shadow: none;
 }
